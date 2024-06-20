@@ -6,6 +6,10 @@ nav {
 	img {
 		width: 10%;
 		height: auto;
+
+		@include media-mobile-only {
+			width: 20%;
+		}
 	}
 
 	ul {
@@ -23,6 +27,14 @@ nav {
 
 	.button {
 		margin-left: auto;
+
+		@include media-mobile-only {
+			padding: 7px 10px;
+		}
+	}
+
+	@include media-mobile-only {
+		padding: 10px;
 	}
 }
 
@@ -60,6 +72,12 @@ nav {
 	grid-template-columns: repeat(4, 1fr);
 	gap: 10vh;
 	padding: 5vw 20vw;
+
+	@include media-mobile-only {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3vw 8vw;
+		gap: 5vh;
+	}
 }
 
 .card {
@@ -102,6 +120,10 @@ nav {
 		align-items: center;
 		align-self: flex-start;
 		padding-left: 20vw;
+
+		@include media-mobile-only {
+			padding-left: 10vw;
+		}
 	}
 
 	&__number {
