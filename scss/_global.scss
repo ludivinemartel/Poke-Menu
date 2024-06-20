@@ -26,10 +26,6 @@
 body {
 	-webkit-text-size-adjust: 100%;
 	font-family: var(--font-regular);
-
-	@include media-mobile-only {
-		overflow: hidden;
-	}
 }
 
 a {

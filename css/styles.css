@@ -20,11 +20,6 @@ body {
   -webkit-text-size-adjust: 100%;
   font-family: var(--font-regular);
 }
-@media (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-}
 
 a {
   text-decoration: none;
